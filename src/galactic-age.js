@@ -12,4 +12,8 @@ export class UserAge {
     let merYears = userDays / 88;
     return merYears;
   }
+
+  venusAge(userDays) {
+    
+  }
 }
