@@ -50,6 +50,7 @@ export class UserAge {
   }
 
   yearsLeft(userDaysLeft, userDays) {
-    const yearsRemaining = userDaysLeft - userDays
+    const yearsRemaining = (userDaysLeft - userDays) / 365;
+    return yearsRemaining;
   }
 }
