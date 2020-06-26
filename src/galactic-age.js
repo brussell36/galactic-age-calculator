@@ -14,6 +14,7 @@ export class UserAge {
   }
 
   venusAge(userDays) {
-    
+    let venusYears = userDays / 225;
+    return venusYears;
   }
 }
