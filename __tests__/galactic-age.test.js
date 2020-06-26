@@ -22,4 +22,8 @@ describe('UserAge', () => {
   test('should take userDays and divide by number of days Venus takes to orbit sun', () => {
     expect(userAge.venusAge(12045)).toBeCloseTo(53.5333);
   });
+
+  test('should take userDays and divide by number of days Mars takes to orbit sun', () => {
+    expect(userAge.marsAge(12045)).toBeCloseTo(17.5327);
+  });
 });
