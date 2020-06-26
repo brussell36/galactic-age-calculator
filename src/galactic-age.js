@@ -22,4 +22,8 @@ export class UserAge {
     let marsYears = userDays / 687;
     return marsYears;
   }
+
+  jupAge(userDays) {
+    
+  }
 }

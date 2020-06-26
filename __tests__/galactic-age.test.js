@@ -26,4 +26,8 @@ describe('UserAge', () => {
   test('should take userDays and divide by number of days Mars takes to orbit sun', () => {
     expect(userAge.marsAge(12045)).toBeCloseTo(17.5327);
   });
+
+  test('should determine how many years old a user would be on Jupiter', () => {
+    expect(userAge.jupAge(12045)).toBeCloseTo(2.7966);
+  });
 });
