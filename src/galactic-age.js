@@ -80,10 +80,14 @@ export class UserAge {
   uraAge(userDays, userDaysLeft) {
     const uraYears = userDays / (84 * 365);
     const uraLifeExpectancy = (userDaysLeft - userDays) / (84 * 365);
-    return {
-      first: uraYears,
-      second: uraLifeExpectancy
-    };  
+    if (userDays > userDaysLeft) {
+      return (userDays - userDaysLeft) / (84 * 365);
+    } else {
+      return {
+        first: uraYears,
+        second: uraLifeExpectancy
+      };
+    }  
   }
 
   nepAge(userDays, userDaysLeft) {
