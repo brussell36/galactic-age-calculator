@@ -22,43 +22,57 @@ export class UserAge {
     };
   }
 
-  venusAge(userDays) {
+  venusAge(userDays, userDaysLeft) {
     const venusYears = userDays / 225;
-    return venusYears;
-  }
-
-  venusYearsLeft(userDaysLeft, userDays) {
     const venusLifeExpectancy = (userDaysLeft - userDays) / 225;
-    return venusLifeExpectancy;
+    return {
+      first: venusYears,
+      second: venusLifeExpectancy
+    };
   }
 
-  marsAge(userDays) {
+  marsAge(userDays, userDaysLeft) {
     const marsYears = userDays / 687;
-    return marsYears;
+    const marsLifeExpectancy = (userDaysLeft - userDays) / 687;
+    return {
+      first: marsYears,
+      second: marsLifeExpectancy
+    };
   }
 
-  jupAge(userDays) {
+  jupAge(userDays, userDaysLeft) {
     const jupYears = userDays / (11.8 * 365);
-    return jupYears;
+    const jupLifeExpectancy = (userDaysLeft - userDays) / (11.8 * 365);
+    return {
+      first: jupYears,
+      second: jupLifeExpectancy
+    };
   }
 
-  satAge(userDays) {
+  satAge(userDays, userDaysLeft) {
     const satYears = userDays / (29.4 * 365);
-    return satYears;
+    const satLifeExpectancy = (userDaysLeft - userDays) / (29.4 * 365);
+    return {
+      first: satYears,
+      second: satLifeExpectancy
+    };
   }
-
-  uraAge(userDays) {
+  uraAge(userDays, userDaysLeft) {
     const uraYears = userDays / (84 * 365);
-    return uraYears;
+    const uraLifeExpectancy = (userDaysLeft - userDays) / (84 * 365);
+    return {
+      first: uraYears,
+      second: uraLifeExpectancy
+    };  
   }
 
-  nepAge(userDays) {
+  nepAge(userDays, userDaysLeft) {
     const nepYears = userDays / (164 * 365);
-    return nepYears;
+    const nepLifeExpectancy = (userDaysLeft - userDays) / (164 * 365);
+    return {
+      first: nepYears,
+      second: nepLifeExpectancy
+    }
   }
 
-  yearsLeft(userDaysLeft, userDays) {
-    const yearsRemaining = (userDaysLeft - userDays) / 365;
-    return yearsRemaining;
-  }
 }
