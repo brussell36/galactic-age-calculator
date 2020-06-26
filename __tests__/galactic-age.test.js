@@ -10,4 +10,8 @@ describe('UserAge', () => {
   test('should determine if object holds a users age', () => {
     expect(userAge.age).toEqual(33);
   });
+
+  test('should multiply user age by 365 to find amount of days lived', () => {
+    expect(userAge.findDays(33)).toEqual(12045);
+  });
 });

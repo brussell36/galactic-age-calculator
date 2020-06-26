@@ -3,5 +3,7 @@ export class UserAge {
     this.age = age;
   }
 
-  
+  findDays(age) {
+    
+  }
 }
