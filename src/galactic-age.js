@@ -55,10 +55,14 @@ export class UserAge {
   jupAge(userDays, userDaysLeft) {
     const jupYears = userDays / (11.8 * 365);
     const jupLifeExpectancy = (userDaysLeft - userDays) / (11.8 * 365);
-    return {
-      first: jupYears,
-      second: jupLifeExpectancy
-    };
+    if (userDays > userDaysLeft) {
+      return (userDays - userDaysLeft) / (11.8 * 365);
+    } else {
+      return {
+        first: jupYears,
+        second: jupLifeExpectancy
+      };
+    }
   }
 
   satAge(userDays, userDaysLeft) {
