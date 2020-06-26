@@ -19,8 +19,9 @@ export class UserAge {
     return merYears;
   }
 
-  merYearsLeft() {
-    
+  merYearsLeft(userDaysLeft, userDays) {
+    const merLifeExpectancy = (userDaysLeft - userDays) / 88;
+    return merLifeExpectancy;
   }
 
   venusAge(userDays) {
