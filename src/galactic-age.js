@@ -68,10 +68,14 @@ export class UserAge {
   satAge(userDays, userDaysLeft) {
     const satYears = userDays / (29.4 * 365);
     const satLifeExpectancy = (userDaysLeft - userDays) / (29.4 * 365);
-    return {
-      first: satYears,
-      second: satLifeExpectancy
-    };
+    if (userDays > userDaysLeft) {
+      return (userDays - userDaysLeft) / (29.4 * 365);
+    } else {
+      return {
+        first: satYears,
+        second: satLifeExpectancy
+      };
+    }
   }
   uraAge(userDays, userDaysLeft) {
     const uraYears = userDays / (84 * 365);

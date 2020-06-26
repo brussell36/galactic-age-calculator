@@ -37,7 +37,7 @@ describe('UserAge', () => {
 
   test('should determine how many years old a user would be on Saturn and how many years left and if user has excedded life expetancy by number of years', () => {
     expect(userAge.satAge(12045, 32850)).toMatchObject({"first": 1.1224489795918366, "second": 1.9387755102040816});
-    expect(userAge.satAge(35000, 32850)).toEqual(0.4991873693986534);
+    expect(userAge.satAge(35000, 32850)).toEqual(0.2003541142484391);
   });
 
   test('should determine how many years old a user would be on Uranus', () => {
