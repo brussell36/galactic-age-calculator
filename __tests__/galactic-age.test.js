@@ -15,18 +15,19 @@ describe('UserAge', () => {
     expect(userAge.findDays()).toEqual({"first": 12045, "second": 32850});
   });
 
-  test('should take userDays variable and divide by number of days it takes Mercury to orbit sun,', () => {
+  test('should take userDays variable and divide by number of days it takes Mercury to orbit sun and how many years left and if user has excedded life expetancy by number of years,', () => {
     expect(userAge.merAge(12045, 32850)).toMatchObject({"first": 136.875, "second": 236.42045454545453});
     expect(userAge.merAge(35000, 32850)).toEqual(24.431818181818183);
   });
 
-  test('should take userDays and divide by number of days Venus takes to orbit sun', () => {
+  test('should take userDays and divide by number of days Venus takes to orbit sun and how many years left and if user has excedded life expetancy by number of years', () => {
     expect(userAge.venusAge(12045, 32850)).toMatchObject({"first": 53.53333333333333, "second": 92.46666666666667});
     expect(userAge.venusAge(35000, 32850)).toEqual(9.555555555555555);
   });
 
-  test('should take userDays and divide by number of days Mars takes to orbit sun', () => {
+  test('should take userDays and divide by number of days Mars takes to orbit sun and how many years left and if user has excedded life expetancy by number of years', () => {
     expect(userAge.marsAge(12045, 32850)).toMatchObject({"first": 17.532751091703055, "second": 30.283842794759824});
+    expect(userAge.marsAge(35000, 32850)).toEqual(3);
   });
 
   test('should determine how many years old a user would be on Jupiter', () => {
