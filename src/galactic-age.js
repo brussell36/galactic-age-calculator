@@ -29,6 +29,7 @@ export class UserAge {
   }
 
   satAge(userDays) {
-    
+    const satYears = userDays / (29.4 * 365);
+    return satYears;
   }
 }
