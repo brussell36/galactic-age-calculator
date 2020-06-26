@@ -1,8 +1,8 @@
-# _PROJECT NAME_
+# _Galactic Age Calculator_
 
-#### _SHORT DESCR_
+#### _Will tell a user how old they are on different planets in our solar system, 6/26/2020_
 
-#### By _**YOUR NAME HERE**_
+#### By _**Ben Russell**_
 
 ## Description
 
@@ -11,11 +11,14 @@ _Long deiscription._
 ### Specs
 | Spec | Input | Output |
 | :-------------     | :------------- | :------------- |
-
+| 1. Program will take an age and save it in an object. | 24 | saved |
+| 2. Program will calculate from input age and return their how many days they have lived. | 24 | 8760 |
+| 3. program will calculate from days lived and amount of days it takes Mercury to orbit the sun and return Mercury years old. | 24 | 99.5 |
+| 4. Expand program to accomodate other planets rotations around the sun. | 8760/687 | 12.75 years old on Mars | 
 
 ## Setup/Installation Requirements
 
-* _Visit the following link: _
+* _Visit the following link: https://github.com/brussell36/galactic-age-calculator_
 * _Clone the repository to your desired directory._
 * _OR_
 * _Visit here: _
@@ -36,4 +39,4 @@ _Technology!_
 
 *GPL license distribution*
 
-Copyright (c) 2020 **_Your name(s)_**
+Copyright (c) 2020 **_Ben Russell_**
