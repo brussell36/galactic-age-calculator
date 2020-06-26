@@ -42,10 +42,14 @@ export class UserAge {
   marsAge(userDays, userDaysLeft) {
     const marsYears = userDays / 687;
     const marsLifeExpectancy = (userDaysLeft - userDays) / 687;
-    return {
-      first: marsYears,
-      second: marsLifeExpectancy
-    };
+    if (userDays > userDaysLeft) {
+      return (userDays - userDaysLeft) / 687;
+    } else {
+      return {
+        first: marsYears,
+        second: marsLifeExpectancy
+      };
+    }
   }
 
   jupAge(userDays, userDaysLeft) {

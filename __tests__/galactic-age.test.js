@@ -27,7 +27,7 @@ describe('UserAge', () => {
 
   test('should take userDays and divide by number of days Mars takes to orbit sun and how many years left and if user has excedded life expetancy by number of years', () => {
     expect(userAge.marsAge(12045, 32850)).toMatchObject({"first": 17.532751091703055, "second": 30.283842794759824});
-    expect(userAge.marsAge(35000, 32850)).toEqual(3);
+    expect(userAge.marsAge(35000, 32850)).toEqual(3.1295487627365355);
   });
 
   test('should determine how many years old a user would be on Jupiter', () => {
