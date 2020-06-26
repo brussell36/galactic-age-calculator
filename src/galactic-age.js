@@ -7,4 +7,8 @@ export class UserAge {
     let userDays = this.age * 365;
     return userDays;
   }
+
+  merAge() {
+    
+  }
 }

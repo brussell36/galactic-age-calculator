@@ -14,4 +14,8 @@ describe('UserAge', () => {
   test('should multiply user age by 365 to find amount of days lived', () => {
     expect(userAge.findDays()).toEqual(12045);
   });
+
+  test('should take userDays variable and divide by number of days it takes Mercury to orbit sun', () => {
+    expect(userAge.merAge()).toEqual(136.875)
+  });
 });
