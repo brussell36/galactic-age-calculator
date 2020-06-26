@@ -34,6 +34,7 @@ export class UserAge {
   }
 
   uraAge(userDays) {
-    
+    const uraYears = userDays / (84 * 365);
+    return uraYears;
   }
 }
