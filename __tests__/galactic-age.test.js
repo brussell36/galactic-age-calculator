@@ -39,5 +39,7 @@ describe('UserAge', () => {
     expect(userAge.uraAge(12045)).toBeCloseTo(0.3928);
   });
 
-  
+  test('should determine how many years old a user would be on Neptune', () => {
+    expect(userAge.nepAge(12045)).toBeCloseTo(0.2012);
+  });
 });
