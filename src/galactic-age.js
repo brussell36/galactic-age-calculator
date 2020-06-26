@@ -29,6 +29,10 @@ export class UserAge {
     return venusYears;
   }
 
+  venusYearsLeft(userDaysLeft, userDays) {
+    
+  }
+
   marsAge(userDays) {
     const marsYears = userDays / 687;
     return marsYears;
