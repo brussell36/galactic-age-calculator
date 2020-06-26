@@ -3,7 +3,8 @@ export class UserAge {
     this.age = age;
   }
 
-  findDays(age) {
-    
+  findDays() {
+    let userDays = this.age * 365;
+    return userDays;
   }
 }
