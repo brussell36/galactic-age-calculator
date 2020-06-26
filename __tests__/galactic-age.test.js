@@ -15,9 +15,9 @@ describe('UserAge', () => {
     expect(userAge.findDays()).toEqual({"first": 12045, "second": 32850});
   });
 
-  test('should take userDays variable and divide by number of days it takes Mercury to orbit sun', () => {
+  test('should take userDays variable and divide by number of days it takes Mercury to orbit sun,', () => {
     expect(userAge.merAge(12045, 32850)).toMatchObject({"first": 136.875, "second": 236.42045454545453});
-    expect(userAge.merAge(39000, 32850)).toEqual(25);
+    expect(userAge.merAge(35000, 32850)).toEqual(4.797262396694215);
   });
 
   test('should take userDays and divide by number of days Venus takes to orbit sun', () => {

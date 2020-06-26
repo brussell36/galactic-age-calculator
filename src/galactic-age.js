@@ -17,7 +17,7 @@ export class UserAge {
     const merYears = userDays / 88;
     const merLifeExpectancy = (userDaysLeft - userDays) / 88;
     if (userDays > userDaysLeft) {
-      return (merLifeExpectancy - merYears);
+      return (merYears - merLifeExpectancy) / 88;
     } else {
       return {
         first: merYears,
