@@ -16,6 +16,6 @@ describe('UserAge', () => {
   });
 
   test('should take userDays variable and divide by number of days it takes Mercury to orbit sun', () => {
-    expect(userAge.merAge()).toEqual(136.875)
+    expect(userAge.merAge(12045)).toEqual(136.875);
   });
 });

@@ -8,7 +8,8 @@ export class UserAge {
     return userDays;
   }
 
-  merAge() {
-    
+  merAge(userDays) {
+    let merYears = userDays / 88;
+    return merYears;
   }
 }
