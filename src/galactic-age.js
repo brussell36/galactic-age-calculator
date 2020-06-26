@@ -19,7 +19,7 @@ export class UserAge {
   }
 
   marsAge(userDays) {
-    // let marsYears = userDays / 687;
-    // return marsYears;
+    let marsYears = userDays / 687;
+    return marsYears;
   }
 }
