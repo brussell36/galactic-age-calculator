@@ -27,4 +27,8 @@ export class UserAge {
     const jupYears = userDays / (11.8 * 365);
     return jupYears;
   }
+
+  satAge(userDays) {
+    
+  }
 }
