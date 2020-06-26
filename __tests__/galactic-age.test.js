@@ -50,4 +50,8 @@ describe('UserAge', () => {
   test('should determine how many user has left to live on Mercury', () => {
     expect(userAge.yearsLeft(32850, 12045)).toEqual(57);
   });
+
+  test('should determine how many years a user has left on Mercury', () => {
+    expect(userAge.merYearsLeft(32850)).toBeCloseTo(236.4204);
+  });
 });
