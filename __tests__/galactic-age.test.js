@@ -22,6 +22,7 @@ describe('UserAge', () => {
 
   test('should take userDays and divide by number of days Venus takes to orbit sun', () => {
     expect(userAge.venusAge(12045, 32850)).toMatchObject({"first": 53.53333333333333, "second": 92.46666666666667});
+    expect(userAge.venusAge(35000, 32850)).toEqual(2);
   });
 
   test('should take userDays and divide by number of days Mars takes to orbit sun', () => {
