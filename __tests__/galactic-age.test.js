@@ -44,6 +44,6 @@ describe('UserAge', () => {
   });
 
   test('should store a user input of life expectancy', () => {
-    expect(userAge.lifeExpectancy).toEqual();
+    expect(userAge.lifeExpectancy).toEqual(90);
   });
 });
