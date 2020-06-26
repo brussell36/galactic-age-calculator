@@ -35,11 +35,12 @@ describe('UserAge', () => {
     expect(userAge.jupAge(35000, 32850)).toEqual(0.4991873693986534);
   });
 
-  test('should determine how many years old a user would be on Saturn', () => {
+  test('should determine how many years old a user would be on Saturn and how many years left and if user has excedded life expetancy by number of years', () => {
     expect(userAge.satAge(12045, 32850)).toMatchObject({"first": 1.1224489795918366, "second": 1.9387755102040816});
+    expect(userAge.satAge(35000, 32850)).toEqual(0.4991873693986534);
   });
 
-  test('shoud determine how many years old a user would be on Uranus', () => {
+  test('should determine how many years old a user would be on Uranus', () => {
     expect(userAge.uraAge(12045, 32850)).toMatchObject({"first": 0.39285714285714285, "second": 0.6785714285714286});
   });
 
