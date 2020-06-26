@@ -93,10 +93,13 @@ export class UserAge {
   nepAge(userDays, userDaysLeft) {
     const nepYears = userDays / (164 * 365);
     const nepLifeExpectancy = (userDaysLeft - userDays) / (164 * 365);
-    return {
-      first: nepYears,
-      second: nepLifeExpectancy
+    if (userDays > userDaysLeft) {
+      return (userDays - userDaysLeft) / (164 * 365);
+    } else {
+      return {
+        first: nepYears,
+        second: nepLifeExpectancy
+      };
     }
   }
-
 }

@@ -45,8 +45,9 @@ describe('UserAge', () => {
     expect(userAge.uraAge(35000, 32850)).toEqual(0.07012393998695368);
   });
 
-  test('should determine how many years old a user would be on Neptune', () => {
+  test('should determine how many years old a user would be on Neptune and how many years left and if user has excedded life expetancy by number of years', () => {
     expect(userAge.nepAge(12045, 32850)).toMatchObject({"first": 0.20121951219512196, "second": 0.3475609756097561});
+    expect(userAge.nepAge(35000, 32850)).toEqual(0.07012393998695368);
   });
 
   test('should store a user input of life expectancy', () => {

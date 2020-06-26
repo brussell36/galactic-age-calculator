@@ -18,6 +18,7 @@ _Will take a users and and life expectancy from UI, then calculate how old they 
 | 3. program will calculate from days lived and amount of days it takes Mercury to orbit the sun and return Mercury years old. | 24 | 99.5 |
 | 4. Expand program to accomodate other planets rotations around the sun. | 8760/687 | 12.75 years old on Mars | 
 | 5. Program will take in life expectancy and tell user how many years they have left on each planet. | 24 | 66 years left on Earth |
+| 6. Program will tell user if they have surpassed life expectancy and by how much for each planet. | 95 | 24 years on Mercury |
 
 ## Setup/Installation Requirements
 
