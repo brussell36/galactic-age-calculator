@@ -46,4 +46,8 @@ describe('UserAge', () => {
   test('should store a user input of life expectancy', () => {
     expect(userAge.lifeExpectancy).toEqual(90);
   });
+
+  test('should determine how many user has left to live on Mercury', () => {
+    expect(userAge.yearsLeft(32850, 12045)).toEqual(57);
+  });
 });

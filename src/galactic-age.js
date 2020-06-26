@@ -5,8 +5,13 @@ export class UserAge {
   }
 
   findDays() {
-    const userDays = this.age * 365;
+    const userDays = this.age * 365;    
     return userDays;
+  }
+
+  findDaysLeft() {
+    const userDaysLeft = this.lifeExpectancy * 365;
+    return userDaysLeft;
   }
 
   merAge(userDays) {
@@ -42,5 +47,9 @@ export class UserAge {
   nepAge(userDays) {
     const nepYears = userDays / (164 * 365);
     return nepYears;
+  }
+
+  yearsLeft(userDaysLeft, userDays) {
+    const yearsRemaining = userDaysLeft - userDays
   }
 }
