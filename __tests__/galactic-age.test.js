@@ -12,11 +12,11 @@ describe('UserAge', () => {
   });
 
   test('should multiply user age by 365 to find amount of days lived and how many days are in life expectancy', () => {
-    expect(userAge.findDays()).toEqual(12045, 32850);
+    expect(userAge.findDays()).toEqual({"first": 12045, "second": 32850});
   });
 
   test('should take userDays variable and divide by number of days it takes Mercury to orbit sun', () => {
-    expect(userAge.merAge(12045)).toEqual(136.875);
+    expect(userAge.merAge(12045, 32850)).toMatchObject({"first": 136.875, "second": 236.42045454545453});
   });
 
   test('should take userDays and divide by number of days Venus takes to orbit sun', () => {
@@ -50,11 +50,7 @@ describe('UserAge', () => {
   test('should determine how many user has left to live on Mercury', () => {
     expect(userAge.yearsLeft(32850, 12045)).toEqual(57);
   });
-
-  test('should determine how many years a user has left on Mercury', () => {
-    expect(userAge.merYearsLeft(32850, 12045)).toBeCloseTo(236.4204);
-  });
-
+  
   test('should determine how many years a user has left on Venus', () => {
     expect(userAge.venusYearsLeft(32850, 12045)).toBeCloseTo(92.4666);
   });

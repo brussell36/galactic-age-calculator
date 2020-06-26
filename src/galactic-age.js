@@ -13,14 +13,13 @@ export class UserAge {
     };
   }
 
-  merAge(userDays) {
+  merAge(userDays, userDaysLeft) {
     const merYears = userDays / 88;
-    return merYears;
-  }
-
-  merYearsLeft(userDaysLeft, userDays) {
     const merLifeExpectancy = (userDaysLeft - userDays) / 88;
-    return merLifeExpectancy;
+    return {
+      first: merYears,
+      second: merLifeExpectancy
+    };
   }
 
   venusAge(userDays) {
