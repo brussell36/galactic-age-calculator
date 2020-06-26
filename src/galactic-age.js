@@ -1,6 +1,7 @@
 export class UserAge {
-  constructor(age) {
+  constructor(age, lifeExpectancy) {
     this.age = age;
+    this.lifeExpectancy = lifeExpectancy;
   }
 
   findDays() {

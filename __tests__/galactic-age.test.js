@@ -4,7 +4,7 @@ describe('UserAge', () => {
   let userAge;
 
   beforeEach( () => {
-    userAge = new UserAge(33);
+    userAge = new UserAge(33, 90);
   });
 
   test('should determine if object holds a users age', () => {
@@ -41,5 +41,9 @@ describe('UserAge', () => {
 
   test('should determine how many years old a user would be on Neptune', () => {
     expect(userAge.nepAge(12045)).toBeCloseTo(0.2012);
+  });
+
+  test('should store a user input of life expectancy', () => {
+    expect(userAge.lifeExpectancy).toEqual();
   });
 });
