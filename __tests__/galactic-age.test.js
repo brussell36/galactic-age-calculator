@@ -34,4 +34,8 @@ describe('UserAge', () => {
   test('should determine how many years old a user would be on Saturn', () => {
     expect(userAge.satAge(12045)).toBeCloseTo(1.1222);
   });
+
+  test('shoud determine how many years old a user would be on Uranus', () => {
+    expect(userAge.uraAge(12045)).toBeCloseTo(0.3928);
+  });
 });
