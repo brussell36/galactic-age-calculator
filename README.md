@@ -1,3 +1,5 @@
+![Swirling Galaxy](https://ichef.bbci.co.uk/images/ic/1200x675/p089l2pr.jpg)
+
 # _Galactic Age Calculator_
 
 #### _Will tell a user how old they are on different planets in our solar system, 6/26/2020_
@@ -6,7 +8,7 @@
 
 ## Description
 
-_Long deiscription._
+_Will take a users and and life expectancy from UI, then calculate how old they would be on a chosen planet. It will also tell them how many years on that planet until they reach life expectancy. If user has surpassed life expectancy it will tell them how long they have lived past life expectancy on chosen planet._
 
 ### Specs
 | Spec | Input | Output |
@@ -29,7 +31,8 @@ _Long deiscription._
 
 ## Known Bugs
 
-_ _
+_No known bugs. Please contact me if you find any._
+
 ## Support and contact details
 
 _Contact me at benjaminrussell36@gmail.com_
@@ -39,9 +42,6 @@ _Contact me at benjaminrussell36@gmail.com_
 * _NPM_
 * _Webpack_
 * _Javascript_
-* _Technology!_
-* _Technology!_
-* _Technology!_
 
 ### License
 
